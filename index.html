@@ -2,6 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pinkmode.css">
     <title>Twitter</title>
 
     <script src="https://kit.fontawesome.com/cd801faa65.js" crossorigin="anonymous"></script>
@@ -84,13 +85,16 @@
     <button id="signup">Sign Up</button>
 
 
-    <div id="toolbar">
+    <div id="toolbar" class="border">
         <div id="tool-bar-left">
-            <i class="fab fa-twitter"></i>
-            <input type="text" placeholder="Search Twitter"></input>
+            <i class="fab fa-twitter text"></i>
+            <input type="text" id="search" placeholder="Search Twitter"></input>
         </div>
 
-        <a>Log In</a>
+        <div>
+            <a>Log In</a>
+            <i id="toggle" class="far fa-lightbulb text"></i>
+        </div>
 
     </div>
 
@@ -120,28 +124,28 @@
                     </div>
 
                     <div id="profile">
-                        <h4>Emmmanuel</h4>
-                        <h4>@emmanuel</h4>
-                        <p><i class="fas fa-link"></i>emmanuel.com</p>
-                        <p><i class="far fa-calendar"></i>Joined April 2020</p>
+                        <h4 class="text">Emmmanuel</h4>
+                        <h4 class="text">@emmanuel</h4>
+                        <p class="text"><i class="fas fa-link"></i>emmanuel.com</p>
+                        <p class="text"><i class="far fa-calendar"></i>Joined April 2020</p>
                     </div>
                 </div>
 
                 <div id="block-container">
 
                     <div class="block">
-                        <h3>TWEETS</h3>
-                        <h1>92</h1>
+                        <h3 class="text">TWEETS</h3>
+                        <h1 class="text">92</h1>
                     </div>
 
                     <div class="block">
-                        <h3>FOLLOWING</h3>
-                        <h1>10</h1>
+                        <h3 class="text">FOLLOWING</h3>
+                        <h1 class="text">10</h1>
                     </div>
 
                     <div class="block">
-                        <h3>FOLLOWERS</h3>
-                        <h1>14.5m</h1>
+                        <h3 class="text">FOLLOWERS</h3>
+                        <h1 class="text">14.5m</h1>
                     </div>
                 </div>
 
@@ -165,10 +169,10 @@
 
 
 
-                <aside id="left-aside">
+                <aside id="left-aside" class="border">
 
                     <div id="left-aside-top">
-                        <p>Media</p>
+                        <p class="text">Media</p>
                     </div>
 
                     <div id="image-wrapper">
@@ -183,9 +187,9 @@
                 </aside>
 
 
-                <div id="scrollable">
+                <div id="scrollable" class="border">
 
-                    <div id="tabs">
+                    <div id="tabs" class="border">
                         <a>Tweets</a>
 
                         <a>Tweets & replies</a>
@@ -204,14 +208,14 @@
 
                         <div class="caption-image-wrap">
                             <div class="post-name-date">
-                                <h4>Emmanuel</h4>
-                                <p>@Emmanuel</p>
+                                <h4 class="text">Emmanuel</h4>
+                                <p class="text">@Emmanuel</p>
 
-                                <p>23 April</p>
+                                <p class="text">23 April</p>
                             </div>
 
                             <div>
-                                <p class="caption">Here is my first Twitter post!&#128513; #NewBeginnings</p>
+                                <p class="caption text">Here is my first Twitter post!&#128513; #NewBeginnings</p>
                                 <div class="post-image-container">
                                     <img src="images/party.jpeg">
 
@@ -331,13 +335,13 @@
 
 
 
-                <aside id="right-aside">
+                <aside id="right-aside" class="border">
                     <div>
-                        <h2>New to Twitter?</h2>
-                        <p>Sign up now to get your own personalised timeline!</p>
+                        <h2 class="text">New to Twitter?</h2>
+                        <p class="text">Sign up now to get your own personalised timeline!</p>
                     </div>
 
-                    <a>SIGN UP</a>
+                    <a class="text border">SIGN UP</a>
                 </aside>
 
 
@@ -352,30 +356,76 @@
         </div>
     </main>
 
+    <script>
+
+
+
+
+        window.onload = () => {
+
+
+
+
+            var nightToggle = document.getElementById("toggle");
+            var pageText = document.getElementsByClassName("text");
+
+
+            var toolbar = document.getElementById("toolbar");
+            var search = document.getElementById("search");
+            var background = document.getElementById("content");
+            var userBar = document.getElementById("user-bar");
+            var leftAside = document.getElementById("left-aside");
+            var rightAside = document.getElementById("right-aside");
+            var scrollable = document.getElementById("scrollable");
+
+
+
+            nightToggle.onclick = () => {
+
+                toolbar.classList.toggle("elements");
+                background.classList.toggle("background");
+
+                userBar.classList.toggle("elements");
+                leftAside.classList.toggle("elements");
+                rightAside.classList.toggle("elements");
+                scrollable.classList.toggle("elements");
+
+
+                search.classList.toggle("search");
+
+                function changeText() {
+                    var pageText = document.getElementsByClassName("text");
+                    for (var i = 0; i < pageText.length; i++) {
+                        pageText[i].classList.toggle("dark");
+                    }
+                }
+
+
+                changeText();
+
+
+
+                function changeBorder() {
+                    var border = document.getElementsByClassName("border");
+                    for (var i = 0; i < border.length; i++) {
+                        border[i].classList.toggle("border-dark");
+                    }
+                }
+
+                changeBorder();
+
+
+
+
+
+            }
+
+
+
+
+        }
+
+    </script>
 
 
 </body>
-
-<script>
-
-    window.onload = () => {
-        let bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
-        bannerNode.parentNode.removeChild(bannerNode);
-    }
-
-</script>
-
-
-<script>
-
-    var heart = document.getElementsByClassName("post-heart");
-    var heartModal = document.getElementsByClassName("modal-background-like");
-
-
-    heart.onclick = () => {
-        heartModal.style.display = "flex";
-
-    }
-
-
-</script>

@@ -1,0 +1,27 @@
+.background{
+    background-color:black !important;
+    
+  
+}
+
+.elements{
+background-color: #191919 !important;
+}
+
+.search{
+    background-color: #323232 !important;
+}
+
+.dark{
+    color:white !important;
+}
+
+.follow-dark{
+    color:white;
+    border-color:white;
+}
+
+.border-dark{
+    border-color: #4c4c4c !important;
+
+}
