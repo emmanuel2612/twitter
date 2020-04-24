@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    transition: ease-in-out 0.3s;
 }
 
 body{
@@ -151,10 +152,11 @@ display: none;
 
 }
 
-#toolbar i{
+#toolbar i:nth-child(1){
     color:#1DA1F2;
     font-size:25px;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 606px) {
@@ -197,6 +199,21 @@ input[type=text] {
     font-size:0.9em;
     color:#7f7f7f;
  }
+
+ #toolbar i:nth-child(2){
+    color:#1DA1F2;
+    font-size:25px;
+    cursor: pointer;
+    margin-left:30px;
+
+}
+
+#toolbar div:nth-child(2){
+    white-space: nowrap;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #header-pusher{
     height:500px;
@@ -319,7 +336,8 @@ header a{
 
 
 #search{
-    width:500px;
+    max-width:500px;
+    white-space: nowrap;
 }
 
 
@@ -336,6 +354,7 @@ header a{
     justify-content: center;
     z-index: 3;
     position: relative;
+    transition: ease-in-out 0.3s;
 }
 
 
@@ -364,6 +383,7 @@ header a{
     justify-content: space-between;
     padding-left:1.5%;
     padding-right:1.5%;
+    transition: ease-in-out 0.3s;
 }
 
 @media screen and (max-width: 908px) {
@@ -630,6 +650,7 @@ header a{
     border: solid 1px #d9d9d9;
     border-radius: 2px;
     padding-bottom: 18px;
+    transition: ease-in-out 0.3s;
 }
 
 
@@ -689,6 +710,7 @@ header a{
     border-radius: 2px;
     display: flex;
     flex-direction: column;
+    transition: ease-in-out 0.3s;
 }
 
 @media screen and (max-width: 1136px) {
@@ -902,6 +924,7 @@ header a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: ease-in-out 0.3s;
 }
 
 @media screen and (max-width: 908px) {
