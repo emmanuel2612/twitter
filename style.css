@@ -373,10 +373,12 @@ header a{
     }
 }
 
+
 #user-bar{
     height:130px;
     width:100%;
     background-color:white;
+    border: solid 1px #d9d9d9;
     margin-bottom: 14px;
     display: flex;
     /*padding:14px;*/
@@ -385,6 +387,7 @@ header a{
     padding-right:1.5%;
     transition: ease-in-out 0.3s;
 }
+
 
 @media screen and (max-width: 908px) {
 
