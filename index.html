@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="darkmode.css">
     <title>Twitter</title>
 
+    <script src="script.js"></script>
+
     <script src="https://kit.fontawesome.com/cd801faa65.js" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Heebo:100,300&display=swap" rel="stylesheet">
@@ -190,15 +192,20 @@
                 <div id="scrollable" class="border">
 
                     <div id="tabs" class="border">
-                        <a>Tweets</a>
+                        <a id="tweets">Tweets</a>
 
-                        <a>Tweets & replies</a>
+                        <a id="tweetsreplies">Tweets & replies</a>
 
                         <a>Media</a>
 
                         <a>Likes</a>
                     </div>
 
+                    <!-- START OF TWEETS CONTAINER-->
+
+
+                    <div id="article-container">
+
                     <article class="post border">
 
                         <div class="post-profile-pic-c">
@@ -218,6 +225,197 @@
                                 <p class="caption text">Here is my first Twitter post!&#128513; #NewBeginnings</p>
                                 <div class="post-image-container">
                                     <img src="images/party.jpeg" class="border">
+
+                                    <div id="icon-wrap">
+
+                                        <div class="icon-container">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="fas fa-retweet post-retweet"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="far fa-heart post-heart"></i>
+                                        </div>
+
+                                        <div class="icon-container">
+                                            <i class="far fa-bookmark"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="post border">
+
+                        <div class="post-profile-pic-c">
+                            <div class="post-profile-pic"></div>
+                        </div>
+
+
+                        <div class="caption-image-wrap">
+                            <div class="post-name-date">
+                                <h4 class="text">Emmanuel</h4>
+                                <p class="text">@Emmanuel</p>
+
+                                <p class="text">23 April</p>
+                            </div>
+
+                            <div>
+                                <p class="caption text">Here is my first Twitter post!&#128513; #NewBeginnings</p>
+                                <div class="post-image-container">
+                                    <img src="images/party.jpeg" class="border">
+
+                                    <div id="icon-wrap">
+
+                                        <div class="icon-container">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="fas fa-retweet post-retweet"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="far fa-heart post-heart"></i>
+                                        </div>
+
+                                        <div class="icon-container">
+                                            <i class="far fa-bookmark"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="post border">
+
+                        <div class="post-profile-pic-c">
+                            <div class="post-profile-pic"></div>
+                        </div>
+
+
+                        <div class="caption-image-wrap">
+                            <div class="post-name-date">
+                                <h4 class="text">Emmanuel</h4>
+                                <p class="text">@Emmanuel</p>
+
+                                <p class="text">23 April</p>
+                            </div>
+
+                            <div>
+                                <p class="caption text">Here is my first Twitter post!&#128513; #NewBeginnings</p>
+                                <div class="post-image-container">
+                                    <img src="images/party.jpeg" class="border">
+
+                                    <div id="icon-wrap">
+
+                                        <div class="icon-container">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="fas fa-retweet post-retweet"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="far fa-heart post-heart"></i>
+                                        </div>
+
+                                        <div class="icon-container">
+                                            <i class="far fa-bookmark"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="post border">
+
+                        <div class="post-profile-pic-c">
+                            <div class="post-profile-pic"></div>
+                        </div>
+
+
+                        <div class="caption-image-wrap">
+                            <div class="post-name-date">
+                                <h4 class="text">Emmanuel</h4>
+                                <p class="text">@Emmanuel</p>
+
+                                <p class="text">23 April</p>
+                            </div>
+
+                            <div>
+                                <p class="caption text">Here is my first Twitter post!&#128513; #NewBeginnings</p>
+                                <div class="post-image-container">
+                                    <img src="images/party.jpeg" class="border">
+
+                                    <div id="icon-wrap">
+
+                                        <div class="icon-container">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="fas fa-retweet post-retweet"></i>
+                                        </div>
+                                        <div class="icon-container">
+                                            <i class="far fa-heart post-heart"></i>
+                                        </div>
+
+                                        <div class="icon-container">
+                                            <i class="far fa-bookmark"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- END OF TWEETS CONTAINER -->
+
+
+
+                <!-- START OF TWEETS & REPLIES -->
+
+
+                <div id="article-container-replies">
+
+                    <article class="post border">
+
+                        <div class="post-profile-pic-c">
+                            <div class="post-profile-pic"></div>
+                        </div>
+
+
+                        <div class="caption-image-wrap">
+                            <div class="post-name-date">
+                                <h4 class="text">Emmanuel</h4>
+                                <p class="text">@Emmanuel</p>
+
+                                <p class="text">23 April</p>
+                            </div>
+
+                            <div>
+                                <p class="caption text">Here is my first Twitter post!&#128513; #NewBeginnings</p>
+                                <div class="post-image-container">
+                                 
 
                                     <div id="icon-wrap">
 
@@ -378,6 +576,12 @@
                         </div>
 
                     </article>
+
+                </div>
+
+
+
+                <!-- END OF TWEETS & REPLIES-->
 
 
                 </div>
@@ -410,78 +614,6 @@
         </div>
     </main>
 
-    <script>
-
-
-"use strict";
-
-        window.onload = () => {
-
-           
-
-
-
-
-            var nightToggle = document.getElementById("toggle");
-            var pageText = document.getElementsByClassName("text");
-
-
-            var toolbar = document.getElementById("toolbar");
-            var search = document.getElementById("search");
-            var background = document.getElementById("content");
-            var userBar = document.getElementById("user-bar");
-            var leftAside = document.getElementById("left-aside");
-            var rightAside = document.getElementById("right-aside");
-            var scrollable = document.getElementById("scrollable");
-
-
-
-            nightToggle.onclick = () => {
-
-                toolbar.classList.toggle("elements");
-                background.classList.toggle("background");
-
-                userBar.classList.toggle("elements");
-                leftAside.classList.toggle("elements");
-                rightAside.classList.toggle("elements");
-                scrollable.classList.toggle("elements");
-
-
-                search.classList.toggle("search");
-
-                function changeText() {
-                    var pageText = document.getElementsByClassName("text");
-                    for (var i = 0; i < pageText.length; i++) {
-                        pageText[i].classList.toggle("dark");
-                    }
-                }
-
-
-                changeText();
-
-
-
-                function changeBorder() {
-                    var border = document.getElementsByClassName("border");
-                    for (var i = 0; i < border.length; i++) {
-                        border[i].classList.toggle("border-dark");
-                    }
-                }
-
-                changeBorder();
-
-
-
-
-
-            }
-
-
-
-
-        }
-
-    </script>
 
 
 </body>

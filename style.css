@@ -5,6 +5,20 @@
     transition: ease-in-out 0.3s;
 }
 
+
+#article-container{
+    transition: ease 0.3s;
+ }
+
+#article-container-replies{
+   transform: translate(-100%);
+   display: none;
+   transition: ease 0.3s;
+}
+
+
+
+
 body{
     width:100%;
 }
@@ -714,6 +728,7 @@ header a{
     display: flex;
     flex-direction: column;
     transition: ease-in-out 0.3s;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1136px) {
